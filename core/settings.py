@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'characteristics',
     'cities',
     'neighborhood',
+    'property',
 ]
 
 MIDDLEWARE = [
