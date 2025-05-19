@@ -1,4 +1,5 @@
 from django.db import models
+from categories.models import UrbanAspectCategory, ResidentialAspectCategory
 
 class PositivePoints(models.Model):
     name = models.CharField(
@@ -9,6 +10,20 @@ class PositivePoints(models.Model):
         blank=True,
         null=True,
         verbose_name='Descrição'
+    )
+    urban_aspect = models.ForeignKey(
+        UrbanAspectCategory,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='Categoria urbana'
+    )
+    residential_aspect = models.ForeignKey(
+        ResidentialAspectCategory,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='Categoria residencial'
     )
 
     class Meta:
@@ -28,6 +43,20 @@ class NegativePoints(models.Model):
         blank=True,
         null=True,
         verbose_name='Descrição'
+    )
+    urban_aspect = models.ForeignKey(
+        UrbanAspectCategory,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='Categoria urbana'
+    )
+    residential_aspect = models.ForeignKey(
+        ResidentialAspectCategory,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='Categoria residencial'
     )
 
     class Meta:

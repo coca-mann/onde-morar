@@ -20,7 +20,7 @@ class UrbanAspectCategory(models.Model):
         return self.name
 
 
-class PropertyType(models.Model):
+class ResidentialAspectCategory(models.Model):
     name = models.CharField(
         max_length=255,
         verbose_name='Nome'
@@ -32,8 +32,8 @@ class PropertyType(models.Model):
     )
 
     class Meta:
-        verbose_name = 'Tipo de residência'
-        verbose_name_plural = 'Tipos de residências'
+        verbose_name = 'Categoria residencial'
+        verbose_name_plural = 'Categorias residenciais'
 
     def __str__(self):
         return self.name
