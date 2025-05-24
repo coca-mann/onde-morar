@@ -131,7 +131,7 @@ JAZZMIN_SETTINGS = {
     "site_title": "Onde Morar",
     "site_header": "Onde Morar",
     "site_brand": "Onde Morar",
-    "show_ui_builder": True,
+    "show_ui_builder": False,
     "icons": {
         "cities.City": "fa-solid fa-map-location-dot",
         "neighborhood.Neighborhood": "fa-solid fa-map-location-dot",
