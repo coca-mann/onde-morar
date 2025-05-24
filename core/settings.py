@@ -126,3 +126,21 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Onde Morar",
+    "site_header": "Onde Morar",
+    "site_brand": "Onde Morar",
+    "show_ui_builder": True,
+    "icons": {
+        "cities.City": "fa-solid fa-map-location-dot",
+        "neighborhood.Neighborhood": "fa-solid fa-map-location-dot",
+        "property.Property": "fa-solid fa-house",
+        "characteristics.PositivePoints": "fa-solid fa-check",
+        "characteristics.NegativePoints": "fa-solid fa-xmark",
+        "categories.ResidentialAspectCategory": "fa-solid fa-house-crack",
+        "categories.UrbanAspectCategory": "fa-solid fa-road",
+        "property.FinancingOption": "fa-solid fa-file-invoice",
+    },
+    "custom_css": "jazzmin.css",
+}
