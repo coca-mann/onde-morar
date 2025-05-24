@@ -142,3 +142,5 @@ JAZZMIN_SETTINGS = {
     },
     "custom_css": "jazzmin.css",
 }
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
