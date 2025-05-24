@@ -1,0 +1,14 @@
+# IP address of PostgreSQL server
+DB_HOST=127.0.0.1
+# Database name
+DB_NAME=db
+# Database user
+DB_USER=user
+# Database user password
+DB_PASSWORD=password
+# Database port
+DB_PORT=5432
+# Django production secret key
+DJANGO_SECRET_KEY=
+# Debug mode
+DEBUG=True
